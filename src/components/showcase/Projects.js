@@ -1,11 +1,11 @@
-import React, { useState, useRef } from 'react'; 
+import React, { useState } from 'react'; 
 import mirrorImage from '../../resources/mirror.png';
 import skate from '../../resources/skateboard.png';
 import ufc from '../../resources/ufc.jpeg';
 import NHL from '../../resources/NHL.png';
 import nexum from '../../resources/nexum.png';
 
-const Projects = ({projectsRef}) => {
+const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
     const projectsData = [
@@ -55,7 +55,7 @@ const Projects = ({projectsRef}) => {
     : projectsData.filter(project => project.category === selectedCategory);
 
   return (
-    <div ref={projectsRef} className="bg-gray-100 py-20">
+    <div id='projects' className="bg-gray-100 py-20">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 xl:px-20">
             <div className="flex justify-center mb-8">
                 <button

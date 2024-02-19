@@ -1,13 +1,11 @@
-import React, { useState, useRef } from 'react'; 
+import React, { useState } from 'react'; 
 import resume from '../../resources/resume.jpg';
-import skate from '../../resources/skateboard.png';
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
-  const aboutRef = useRef(null);
 
   return (
-    <div ref={aboutRef}>
+    <div id='about'>
       <div className="bg-white text-gray-900 py-20 px-8 md:px-24 lg:px-32 xl:px-40 2xl:px-60">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-4">About Me</h2>
