@@ -10,6 +10,30 @@ const Projects = ({projectsRef}) => {
 
     const projectsData = [
         {
+            id: 4,
+            title: 'UFC Fight Prediction Model',
+            description: 'Random forest model trained on UFC fight data procured with custom web scraper',
+            category: 'AI',
+            link: 'https://github.com/Mathew-Maradin/UFC-AI-Fight-Predictor',
+            image: ufc,
+        },
+        {
+            id: 3,
+            title: 'Nexum',
+            description: 'DeFi marketplace for datasets to train AI models on the Ethereum blockchain',
+            category: 'Crypto',
+            link: 'https://devpost.com/software/nexum-g6siu0',
+            image: nexum,
+        },
+        {
+            id: 5,
+            title: 'NHL & Rogers parterned fan experience',
+            description: 'Hackathon project turned velocity backed endeavour to build a fan experience for Sportsnet and the NHL',
+            category: 'Fullstack',
+            link: 'https://uwaterloo.ca/news/hacking-hockey-future',
+            image: NHL,
+        },
+        {
             id: 1,
             title: 'Smart Mirror',
             description: 'Raspberry Pi powered smart mirror built on magic mirror 2',
@@ -24,30 +48,6 @@ const Projects = ({projectsRef}) => {
             category: 'Hardware',
             link: 'https://github.com/Mathew-Maradin/Electric-Skateboard',
             image: skate,
-        },
-        {
-            id: 3,
-            title: 'Nexum',
-            description: 'DeFi marketplace for datasets to train AI models on the Ethereum blockchain',
-            category: 'Crypto',
-            link: 'https://devpost.com/software/nexum-g6siu0',
-            image: nexum,
-        },
-        {
-            id: 4,
-            title: 'UFC Fight Prediction Model',
-            description: 'DeFi marketplace for datasets to train AI models on the Ethereum blockchain',
-            category: 'AI',
-            link: 'https://github.com/Mathew-Maradin/UFC-AI-Fight-Predictor',
-            image: ufc,
-        },
-        {
-            id: 5,
-            title: 'NHL & Rogers parterned fan experience',
-            description: 'DeFi marketplace for datasets to train AI models on the Ethereum blockchain',
-            category: 'Fullstack',
-            link: 'https://uwaterloo.ca/news/hacking-hockey-future',
-            image: NHL,
         }];
 
     const filteredProjects = selectedCategory === 'All'
