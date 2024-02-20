@@ -57,7 +57,7 @@ const Projects = () => {
   return (
     <div id='projects' className="bg-gray-100 py-20">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 xl:px-20">
-            <div className="flex justify-center mb-8 flex-wrap pt-5">
+            <div className="flex justify-center mb-8 flex-wrap">
                 <button
                 className={`mr-4 py-2 px-4 rounded-full ${selectedCategory === 'All' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
                 onClick={() => setSelectedCategory('All')}
