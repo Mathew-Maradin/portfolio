@@ -77,13 +77,13 @@ const Projects = () => {
                 Fullstack
                 </button>
                 <button
-                className={`py-2 px-4 rounded-full ${selectedCategory === 'Hardware' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
+                className={`mr-4 py-2 px-4 rounded-full ${selectedCategory === 'Hardware' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
                 onClick={() => setSelectedCategory('Hardware')}
                 >
                 Hardware
                 </button>
                 <button
-                className={`py-2 px-4 rounded-full ${selectedCategory === 'Crypto' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
+                className={`mr-4 py-2 px-4 rounded-full ${selectedCategory === 'Crypto' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
                 onClick={() => setSelectedCategory('Crypto')}
                 >
                 Crypto
