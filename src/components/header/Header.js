@@ -27,8 +27,8 @@ const Header = () => {
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
           <div className="fixed inset-0 bg-gray-900 opacity-50"></div>
-          <div className="relative w-auto max-w-3xl mx-auto my-6 bg-white rounded-lg shadow-lg">
-            <img src={resume} alt="Resume" className="w-full" />
+          <div className="relative w-auto max-w-3xl mx-auto mt-500px bg-white rounded-lg shadow-lg">
+            <img src={resume} alt="Resume" style={{marginTop: "500px"}} className="w-75 h-75" />
             <button
               onClick={() => setShowModal(false)}
               className="absolute top-0 right-0 m-4 text-gray-700 hover:text-gray-900"
