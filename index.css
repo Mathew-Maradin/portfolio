@@ -1,0 +1,233 @@
+:root{
+  --bg: #f7ecd2;
+  --accent: #8a4b1f;
+  --text: #2b2418;
+  --grid-light: rgba(83,60,34,0.06);
+  --grid-strong: rgba(83,60,34,0.14);
+  --grid-size: 20px;
+  --grid-major: calc(var(--grid-size) * 5);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background-color:var(--bg);
+
+  background-image:
+    radial-gradient(circle at 10% 10%, rgba(255,255,255,0.02), transparent 15%),
+    radial-gradient(circle at 90% 90%, rgba(0,0,0,0.02), transparent 20%),
+    linear-gradient(var(--grid-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-light) 1px, transparent 1px),
+    linear-gradient(var(--grid-strong) 2px, transparent 2px),
+    linear-gradient(90deg, var(--grid-strong) 2px, transparent 2px);
+
+  background-size:
+    100% 100%,
+    100% 100%,
+    var(--grid-size) var(--grid-size),
+    var(--grid-size) var(--grid-size),
+    var(--grid-major) var(--grid-major),
+    var(--grid-major) var(--grid-major);
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+
+h1{
+  color:var(--accent);
+  font-size:2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 3rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+.name, .command {
+  font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
+  margin: 0;
+  opacity: 0;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.command {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.social-links {
+  margin-top: 2rem;
+  opacity: 0;
+}
+
+.social-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
+  transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+.separator {
+  color: var(--text);
+  margin: 0 0.75rem;
+  opacity: 0.5;
+}
+
+@keyframes typewriter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.typewriter .name {
+  animation: typewriter 0.5s ease-out forwards;
+}
+
+.typewriter .text-content .command:nth-of-type(1) {
+  animation: typewriter 0.5s ease-out 0.8s forwards;
+}
+
+.typewriter .text-content .command:nth-of-type(2) {
+  animation: typewriter 0.5s ease-out 1.6s forwards;
+}
+
+.typewriter .text-content .command:nth-of-type(3) {
+  animation: typewriter 0.5s ease-out 2.4s forwards;
+}
+
+.typewriter .text-content .command:nth-of-type(4) {
+  animation: typewriter 0.5s ease-out 3.0s forwards;
+}
+
+.typewriter .text-content .command:nth-of-type(5) {
+  animation: typewriter 0.5s ease-out 3.6s forwards;
+}
+
+.typewriter .social-links {
+  animation: typewriter 0.5s ease-out 4.2s forwards;
+}
+
+.emphasis {
+  color: var(--accent);
+  margin-top: 1.5rem;
+}
+
+.sub-item {
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  opacity: 0;
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 1.5rem;
+  }
+  
+  .name {
+    font-size: 1.25rem;
+  }
+  
+  .command {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 2rem;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    max-width: none;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+    word-break: break-all;
+  }
+
+  .command {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sub-item {
+    padding-left: 1rem;
+  }
+
+  .social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .social-links a {
+    padding: 0.5rem 0;
+  }
+
+  .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .content {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .command {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
