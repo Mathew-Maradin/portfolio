@@ -82,7 +82,7 @@ h1{
 }
 
 .cursor {
-  animation: blink 1s step-end infinite;
+  animation: blink 0.5s step-end infinite;
 }
 
 @keyframes blink {
@@ -99,7 +99,7 @@ h1{
   color: var(--accent);
   text-decoration: none;
   font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
-  transition: opacity 0.2s;
+  transition: opacity 0.1s;
 }
 
 .social-links a:hover {
@@ -118,31 +118,31 @@ h1{
 }
 
 .typewriter .name {
-  animation: typewriter 0.5s ease-out forwards;
+  animation: typewriter 0.125s ease-out forwards;
 }
 
 .typewriter .text-content .command:nth-of-type(1) {
-  animation: typewriter 0.5s ease-out 0.8s forwards;
+  animation: typewriter 0.125s ease-out 0.4s forwards;
 }
 
 .typewriter .text-content .command:nth-of-type(2) {
-  animation: typewriter 0.5s ease-out 1.6s forwards;
+  animation: typewriter 0.25s ease-out 0.8s forwards;
 }
 
 .typewriter .text-content .command:nth-of-type(3) {
-  animation: typewriter 0.5s ease-out 2.4s forwards;
+  animation: typewriter 0.25s ease-out 1.2s forwards;
 }
 
 .typewriter .text-content .command:nth-of-type(4) {
-  animation: typewriter 0.5s ease-out 3.0s forwards;
+  animation: typewriter 0.25s ease-out 1.5s forwards;
 }
 
 .typewriter .text-content .command:nth-of-type(5) {
-  animation: typewriter 0.5s ease-out 3.6s forwards;
+  animation: typewriter 0.25s ease-out 1.8s forwards;
 }
 
 .typewriter .social-links {
-  animation: typewriter 0.5s ease-out 4.2s forwards;
+  animation: typewriter 0.25s ease-out 2.1s forwards;
 }
 
 .emphasis {
