@@ -82,7 +82,7 @@ h1{
 }
 
 .cursor {
-  animation: blink 0.75s step-end infinite;
+  animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
